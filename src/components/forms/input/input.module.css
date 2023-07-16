@@ -1,0 +1,11 @@
+.input {
+    background-color: #316282;
+    padding: 10px;
+    color: white;
+    border: 0;
+    outline: 0;
+}
+
+.fullwidth {
+    width: 100%;
+}
