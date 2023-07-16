@@ -1,8 +1,11 @@
 import Head from 'next/head'
 
+import styles from '@/styles/index.module.css'
+
 import Navbar from '@/components/navbar/navbar'
 import Subtitle from '@/components/tipography/subtitle/subtitle'
 import Container from '@/components/container/container'
+import SaleCard from '@/components/cards/saleCard/saleCard'
 
 export default function Home() {
   return (
@@ -16,10 +19,15 @@ export default function Home() {
       <div>
         <Navbar />
         <Container>
-          <div>
+          <div className={styles.session}>
             <Subtitle>Promoções</Subtitle>
+            <div className={styles.salecontainer}>
+              <SaleCard />
+              <SaleCard />
+              <SaleCard />
+            </div>
           </div>
-          <div>
+          <div className={styles.session}>
             <Subtitle>Outros jogos</Subtitle>
           </div>
         </Container>
@@ -27,3 +35,6 @@ export default function Home() {
     </>
   )
 }
+//git remote add origin https://github.com/super312/DevSteam.git
+//git branch -M main
+//git push -u origin main
